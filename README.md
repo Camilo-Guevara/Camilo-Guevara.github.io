@@ -1,44 +1,53 @@
-# Camilo Guevara — CV creativo
+# Camilo Guevara — Portafolio profesional
 
-Portafolio en español, desarrollado con HTML, CSS y JavaScript sin dependencias ni backend.
+**CV creativo e interactivo | HTML · CSS · JavaScript**
 
-## Abrir
-Extraer el ZIP completo y abrir `index.html`. Mantener `css/`, `js/` y `assets/` junto al HTML. `VISTA_PREVIA.html` es una copia autónoma de revisión que también puede abrirse sin carpetas auxiliares; no es necesaria para el despliegue.
+[Ver sitio web](https://camilo-guevara.github.io/) · [LinkedIn](https://www.linkedin.com/in/camilo-guevara-778a80385/) · [Perfil GitHub](https://github.com/Camilo-Guevara)
 
-## Contenido
-- Presentación con la fotografía original aportada, integrada mediante CSS sin alterar el rostro.
-- Terminal con información personal, estudios, intereses e idiomas.
-- Áreas de habilidades seleccionables; sin porcentajes ni nivel senior.
-- E-commerce académico enlazado a GitHub; Frugi y CyberLab descritos como prácticas académicas.
-- Formación en curso: IFTS N.º 9 y UTN. Ingeniería Topográfica figura como estudios previos no finalizados.
-- Asistente local de preguntas predefinidas, identificado como tal.
-- Contacto por `mailto:`: prepara un correo; no envía ni almacena datos.
-- La página constituye el CV creativo; no ofrece un PDF inexistente.
+## Descripción
 
-Los gráficos de proyectos son diagramas conceptuales originales, no capturas de aplicaciones. Frugi y CyberLab tienen documentación pública pendiente. No se presentan certificados completados ni proyectos de ciencia de datos inexistentes.
+Portafolio personal en español para presentar mi formación en **Análisis de Sistemas (IFTS N.º 9)** y **Ciencia de Datos y Análisis Avanzado (UTN)**, ambas en curso, junto con mis proyectos académicos y mis intereses profesionales.
 
-## Estructura
-- `index.html`: contenido, metadatos y estructura semántica.
-- `css/styles.css`: diseño, adaptación a pantalla, movimiento reducido e impresión.
-- `js/app.js`: navegación, terminal, habilidades, proyectos, FAQ y contacto.
-- `assets/images/camilo.jpeg`: foto suministrada por el titular.
-- `assets/favicon.svg`: marca CG original.
-- `.nojekyll`: publicación estática sin procesamiento Jekyll.
+## Funcionalidades
 
-## Preparación para GitHub Pages
-Destino propuesto: `Camilo-Guevara/Camilo-Guevara.github.io`.
+- Diseño responsivo con estética oscura y fotografía personal.
+- Secciones de perfil, habilidades, proyectos, formación y contacto.
+- Terminal interactiva para consultar información del perfil.
+- Selector de competencias y proyectos.
+- Asistente de consultas con respuestas predefinidas; **no utiliza IA generativa**.
+- Formulario que abre el cliente de correo mediante `mailto:`; **no envía mensajes automáticamente**.
 
-1. Crear ese repositorio en GitHub e inicializarlo con README para disponer de `main`.
-2. Crear una rama `portfolio/es-cv-creativo` desde `main`.
-3. Subir `index.html`, `css/`, `js/`, `assets/`, `.nojekyll`, `.gitignore` y este README a la raíz de esa rama. No hace falta subir `VISTA_PREVIA.html` ni `REVISION.md`.
-4. Abrir un pull request hacia `main`, revisar y aprobar. No fusionar sin autorización del titular.
-5. Tras la aprobación y fusión, configurar Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
-6. Comprobar la URL que indique GitHub. Los metadatos presuponen `https://camilo-guevara.github.io/`; ajustarlos si se utiliza otro repositorio o dominio.
+## Tecnologías
 
-Estado de esta entrega: repositorio creado; propuesta preparada en la rama `portfolio/es-cv-creativo`. Pendiente de revisión y fusión autorizada antes de publicar.
+HTML5, CSS3, JavaScript y GitHub Pages. Este sitio no requiere backend ni servicios externos para sus funciones principales.
 
-## Edición
-La biografía y formación están en HTML; los datos de habilidades, proyectos y respuestas están en `app.js`. Las URLs externas usan `noopener noreferrer`. No incluir credenciales, claves API ni información privada en el repositorio público.
+## Proyectos presentados
 
-## Validación
-Consultar `REVISION.md` para el alcance real de las comprobaciones y lo pendiente antes de publicar.
+- **[E-commerce académico Flask + MySQL](https://github.com/Camilo-Guevara/e-commerce-flash-ifts9):** catálogo y flujo de pedidos; mejoras de seguridad en revisión, no producción.
+- **Frugi App:** análisis de requisitos y diseño de una aplicación; documentación pública pendiente.
+- **CyberLab:** prácticas de redes con Windows y Linux virtualizados; documentación pública pendiente.
+
+Las ilustraciones de los proyectos son conceptuales y no representan capturas verificadas de aplicaciones terminadas.
+
+## Estructura del repositorio
+
+| Ruta | Propósito |
+| --- | --- |
+| `index.html` | Página principal y estructura del contenido |
+| `css/styles.css` | Diseño y adaptación a pantallas |
+| `js/app.js` | Interacciones de la página |
+| `assets/images/camilo.jpeg` | Fotografía de perfil |
+| `assets/favicon.svg` | Identidad visual |
+| `REVISION.md` | Alcance de la revisión y verificaciones pendientes |
+
+## Cómo ejecutarlo localmente
+
+Clona o descarga el repositorio y abre `index.html` en un navegador. Mantén las carpetas `css`, `js` y `assets` junto al archivo HTML.
+
+## Estado y validación
+
+El portafolio está integrado en la rama `main` y publicado mediante GitHub Pages. La validación registrada incluye sintaxis JavaScript, referencias locales y pruebas con DOM simulado; siguen pendientes auditorías completas en navegador y Lighthouse. Consulta `REVISION.md` para conocer el alcance exacto.
+
+## Contacto
+
+[LinkedIn](https://www.linkedin.com/in/camilo-guevara-778a80385/) · [Portafolio](https://camilo-guevara.github.io/) · [GitHub](https://github.com/Camilo-Guevara)
