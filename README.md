@@ -6,7 +6,7 @@
 
 ## Descripción
 
-Portafolio personal en español para presentar mi formación en **Análisis de Sistemas (IFTS N.º 9)** y **Ciencia de Datos y Análisis Avanzado (UTN)**, ambas en curso, junto con mis proyectos académicos y mis intereses profesionales.
+Portafolio personal en español para presentar mi formación en **Análisis de Sistemas (IFTS N.º 9)** y **Ciencia de Datos y Análisis Avanzado (UTN)**, ambas en curso, junto con mis proyectos académicos y mi formación en **Python, estadística, EDA, Machine Learning, modelado y predicciones**. Estas últimas competencias son objetivos formativos en desarrollo, no experiencia profesional acreditada.
 
 ## Funcionalidades
 
