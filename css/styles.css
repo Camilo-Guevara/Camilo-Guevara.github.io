@@ -28,3 +28,6 @@
   .project-selector span{font-size:7px;line-height:1.4}
   .project-selector b{font-size:13px}
 }
+
+/* Los anillos decorativos rotados no deben ampliar el documento móvil. */
+@media(max-width:760px){.portrait-stage{overflow:clip}}
