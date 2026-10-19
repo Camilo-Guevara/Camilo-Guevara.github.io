@@ -6,7 +6,7 @@
 
 ## Descripción
 
-Portafolio personal en español para presentar mi formación en **Análisis de Sistemas (IFTS N.º 9)** y **Ciencia de Datos y Análisis Avanzado (UTN)**, ambas en curso, junto con mis proyectos académicos y mi formación en **Python, estadística, EDA, Machine Learning, modelado y predicciones**. Estas últimas competencias son objetivos formativos en desarrollo, no experiencia profesional acreditada.
+Portafolio personal en español para presentar mi formación en **Análisis de Sistemas (IFTS N.º 9)** y **Ciencia de Datos y Análisis Avanzado (UTN)**, ambas en curso. Incluye demos públicas de **Casino Estadístico** (Monte Carlo e inferencia) y **Titanic Survival Analytics** (ETL, EDA y ML educativo). Los modelos predictivos avanzados siguen siendo parte de mi formación, no experiencia profesional acreditada.
 
 ## Certificaciones acreditadas
 
@@ -17,7 +17,7 @@ Portafolio personal en español para presentar mi formación en **Análisis de S
 - Diseño responsivo con estética oscura y fotografía personal.
 - Secciones de perfil, habilidades, proyectos, formación y contacto.
 - Terminal interactiva para consultar información del perfil.
-- Selector de competencias y proyectos.
+- Selector de competencias y **cinco proyectos** con Casino Estadístico destacado y enlaces a demo y repositorio.
 - Asistente de consultas con respuestas predefinidas; **no utiliza IA generativa**.
 - Formulario que abre el cliente de correo mediante `mailto:`; **no envía mensajes automáticamente**.
 
@@ -27,6 +27,8 @@ HTML5, CSS3, JavaScript y GitHub Pages. Este sitio no requiere backend ni servic
 
 ## Proyectos presentados
 
+- **[Casino Estadístico — demo pública](https://casino-estadistico-ubpy8lsfkqbb8yh6teansn.streamlit.app/)** · [Código](https://github.com/Camilo-Guevara/Casino-Estadistico): simulación Monte Carlo con modelos Binomial, Poisson y Normal; tasas de eventos raros, Z-scores, intervalos de confianza, calibración y exportaciones CSV/JSON. Python, NumPy, SciPy, Plotly y Streamlit. Validación de la versión pública con navegador automatizado en desktop y móvil, para el flujo principal.
+- **[Titanic Survival Analytics — demo pública](https://portafolio-camilo-titanic.streamlit.app/)** · [Código](https://github.com/Camilo-Guevara/Titanic-Survival-Analytics): transformación ETL, análisis EDA y simulación educativa de regresión logística.
 - **[E-commerce académico Flask + MySQL](https://github.com/Camilo-Guevara/e-commerce-flash-ifts9):** catálogo y flujo de pedidos; mejoras de seguridad en revisión, no producción.
 - **Frugi App:** análisis de requisitos y diseño de una aplicación; documentación pública pendiente.
 - **CyberLab:** prácticas de redes con Windows y Linux virtualizados; documentación pública pendiente.
@@ -43,6 +45,7 @@ Las ilustraciones de los proyectos son conceptuales y no representan capturas ve
 | `assets/images/camilo.jpeg` | Fotografía de perfil |
 | `assets/favicon.svg` | Identidad visual |
 | `REVISION.md` | Alcance de la revisión y verificaciones pendientes |
+| `.github/workflows/cv-validation.yml` | Validación de JavaScript, navegación de proyectos, enlaces y estructura HTML |
 
 ## Cómo ejecutarlo localmente
 
@@ -50,7 +53,7 @@ Clona o descarga el repositorio y abre `index.html` en un navegador. Mantén las
 
 ## Estado y validación
 
-El portafolio está integrado en la rama `main` y publicado mediante GitHub Pages. La validación registrada incluye sintaxis JavaScript, referencias locales y pruebas con DOM simulado; siguen pendientes auditorías completas en navegador y Lighthouse. Consulta `REVISION.md` para conocer el alcance exacto.
+El portafolio se publica desde `main` mediante GitHub Pages. La integración de Casino Estadístico incorpora controles de sintaxis y consistencia sobre cinco proyectos, enlaces y semántica HTML, verificados mediante GitHub Actions. No equivale a una auditoría visual completa ni Lighthouse; consulta `REVISION.md` para conocer el alcance exacto.
 
 ## Contacto
 
