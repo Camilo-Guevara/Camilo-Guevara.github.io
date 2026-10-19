@@ -1,0 +1,40 @@
+name: Validación CV digital
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, "feature/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  validar-cv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validar sintaxis JavaScript
+        run: node --check js/app.js
+      - name: Verificar datos, enlaces y proyectos
+        run: python tests/validate_cv.py
+      - name: Instalar navegador Chromium de pruebas
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Probar portafolio en escritorio y móvil
+        run: python tests/browser_smoke.py
+      - name: Guardar capturas de revisión
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-casino-escritorio-movil
+          path: artifacts/cv/
+          if-no-files-found: warn

@@ -13,3 +13,21 @@
 
 /* Cuarta tarjeta: Titanic Survival Analytics */
 @media(min-width:761px){.project-list{gap:10px}.project-selector{min-height:95px}}
+
+/* Cinco proyectos: selector compacto y legible en pantallas pequeñas. */
+.project-selector[data-project="casino"]{border-color:#46e3ba55}
+.project-selector[data-project="casino"].active{border-color:#46e3ba;background:linear-gradient(120deg,#143c44,#171e3d)}
+@media(max-width:760px){
+  .project-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .project-selector{min-width:0;min-height:103px}
+  .project-selector b{line-height:1.3;overflow-wrap:anywhere}
+  .project-selector em{overflow-wrap:anywhere}
+}
+@media(max-width:380px){
+  .project-selector{padding:12px 9px}
+  .project-selector span{font-size:7px;line-height:1.4}
+  .project-selector b{font-size:13px}
+}
+
+/* Los anillos decorativos rotados no deben ampliar el documento móvil. */
+@media(max-width:760px){.portrait-stage{overflow:clip}}
