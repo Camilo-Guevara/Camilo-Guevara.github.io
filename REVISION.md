@@ -1,25 +1,27 @@
-# Revisión de entrega — 16 de octubre de 2026
+# Revisión del CV digital — 19 de octubre de 2026
 
-## Comprobado
-- Sintaxis JavaScript válida mediante `node --check`.
-- Archivos locales referenciados presentes, destinos de anclas existentes e identificadores únicos.
-- Campos del formulario asociados a etiquetas; enlaces externos con protección `noopener`.
-- Ejecución con DOM simulado: selección de cuatro comandos, cinco áreas, tres proyectos, cinco preguntas; apertura/cierre del menú; codificación del correo preparado.
-- La fotografía adjunta está incluida como archivo original; su encuadre se realiza por CSS.
-- Sin librerías de terceros, llamadas a IA, formularios remotos ni claves API.
-- Código preparado para navegación con teclado, controles con estado, región de respuesta accesible, puntos de adaptación a 1000 y 760 píxeles y preferencia de movimiento reducido.
+## Integración de Casino Estadístico
+- Agregado como primer proyecto del selector de portafolio: cinco tarjetas en total.
+- Descripción académica, propósito, tecnologías, limitaciones, demo y repositorio enlazados.
+- Se mantiene Titanic Survival Analytics y los proyectos Frugi, CyberLab y E-commerce.
+- Aptitudes de Ciencia de Datos y asistente local actualizados, sin atribuir experiencia profesional todavía en formación.
+- Estilo Cyber-Dark preservado y selector de proyectos adaptado para pantallas pequeñas.
+- Metadatos del CV y README actualizados.
 
-## Límites de verificación
-No se dispuso de navegador de QA habilitado. Las comprobaciones de DOM simulado no prueban el diseño renderizado ni sustituyen una auditoría de accesibilidad. No se han medido Lighthouse, contraste renderizado, tiempos de carga o comportamiento real del cliente de correo.
+## Verificaciones automáticas
+El workflow `Validación CV digital` ejecuta:
+1. `node --check js/app.js` para sintaxis JavaScript.
+2. `python tests/validate_cv.py` para verificar los cinco proyectos, selección inicial, enlaces a la demo y al código, IDs únicos, anclas, enlaces externos protegidos y alt de imágenes.
 
-## Revisión visual antes de publicar
-- Abrir a 1440, 1024, 768, 390 y 320 píxeles; verificar encuadre, títulos y ausencia de desbordamientos.
-- Recorrer con Tab, Enter y Escape; comprobar el menú móvil y el indicador de foco.
-- Revisar todos los proyectos, áreas, comandos y respuestas.
-- Activar movimiento reducido y comprobar legibilidad sin animaciones.
-- Probar el formulario con correo inválido y válido; comprobar que no afirma enviar automáticamente.
-- Revisar GitHub y LinkedIn desde el navegador.
-- Confirmar la dirección de contacto antes de hacer público el sitio.
+La aplicación externa Casino Estadístico fue validada previamente en su propio repositorio con Playwright: carga pública, simulación de un lote y calibración con datos reales, así como renderizado móvil a 390 px.
 
-## GitHub
-Repositorio creado e inicializado con README. Archivos del portafolio preparados para revisión en `portfolio/es-cv-creativo`. No se fusionó la implementación con main. Publicación pendiente de aprobación.
+## Límites
+Las pruebas estáticas de este portafolio no sustituyen la comprobación visual de GitHub Pages en un navegador. Aún conviene verificar a 1440, 1024, 768, 390 y 320 px; navegación con teclado; contraste y Lighthouse. La disponibilidad de Streamlit puede variar si la aplicación está inactiva.
+
+## Publicación
+El sitio se publica desde la rama `main` mediante GitHub Pages una vez integrados los cambios:
+- https://camilo-guevara.github.io/#proyectos
+- https://github.com/Camilo-Guevara/Camilo-Guevara.github.io
+
+## Revisión histórica
+La revisión del 16 de octubre de 2026 cubría los primeros proyectos, sintaxis JS, DOM simulado y estructura HTML. Esta revisión actualiza el alcance para Casino Estadístico y sustituye las referencias históricas a publicación pendiente.
