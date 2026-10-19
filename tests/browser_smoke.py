@@ -25,6 +25,19 @@ def verify(page, mobile=False):
     if mobile:
         width = page.evaluate("document.documentElement.scrollWidth")
         print(f"Móvil: documento {width}px / viewport 390px", flush=True)
+        offenders = page.evaluate("""() => Array.from(document.querySelectorAll('*'))
+          .filter(el => {
+            const r = el.getBoundingClientRect();
+            const cs = getComputedStyle(el);
+            return cs.display !== 'none' && (r.right > innerWidth + 2 || r.left < -2);
+          })
+          .map(el => ({tag: el.tagName, class: String(el.className).slice(0,90),
+                       text: (el.innerText || '').slice(0,50),
+                       left: Math.round(el.getBoundingClientRect().left),
+                       right: Math.round(el.getBoundingClientRect().right)}))
+          .slice(0,16)""")
+        print(f"Elementos fuera del viewport: {offenders}", flush=True)
+        page.screenshot(path=str(OUT / "cv-mobile-diagnostico.png"), full_page=True)
         assert width <= 400, f"Desbordamiento horizontal móvil: {width}px"
     page.screenshot(path=str(OUT / ("cv-mobile.png" if mobile else "cv-escritorio.png")), full_page=True)
     print(f"OK: CV {'móvil' if mobile else 'escritorio'}, cinco proyectos, botones y enlaces.", flush=True)
