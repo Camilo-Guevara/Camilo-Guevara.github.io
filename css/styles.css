@@ -31,3 +31,19 @@
 
 /* Los anillos decorativos rotados no deben ampliar el documento móvil. */
 @media(max-width:760px){.portrait-stage{overflow:clip}}
+
+
+/* Certificados con imagen autentica */
+#certificaciones .credential-card + .credential-card{margin-top:22px}
+.credential-preview{flex:0 0 clamp(190px,29%,270px);min-width:0;margin:0;align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.credential-preview-link{display:flex;align-items:center;justify-content:center;min-height:192px;padding:14px;overflow:hidden;background:#f8fbff;border:1px solid #446582;border-radius:14px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.credential-preview--badge .credential-preview-link{background:linear-gradient(145deg,#e5f8ec,#f8fffb)}
+.credential-preview-link:hover{transform:translateY(-3px);border-color:#63ddea;box-shadow:0 8px 24px #0005}
+.credential-preview-link:focus-visible{outline:3px solid #6be9f5;outline-offset:4px}
+.credential-preview img{width:100%;height:auto;max-height:210px;object-fit:contain;display:block}
+.credential-preview--badge img{max-width:205px}
+.credential-preview figcaption{color:#8fb7c9;font:10px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;text-align:center}
+#certificaciones .credential-content{flex:1;min-width:0}
+@media(max-width:760px){#certificaciones .credential-card{flex-direction:column;gap:18px}.credential-preview{flex-basis:auto;align-self:stretch;width:100%;max-width:340px;margin:auto}.credential-preview-link{min-height:175px}.credential-preview img{max-height:185px}}
+@media print{.credential-preview-link{background:#fff;border:1px solid #999;box-shadow:none}.credential-preview figcaption{color:#333}}
+@media(prefers-reduced-motion:reduce){.credential-preview-link{transition:none}}
