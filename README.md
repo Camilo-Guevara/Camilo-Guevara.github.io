@@ -10,6 +10,8 @@ Portafolio personal en español para presentar mi formación en **Análisis de S
 
 ## Certificaciones acreditadas
 
+- **Introducción a Ciberseguridad** — Cisco Networking Academy, completado en **octubre de 2026**. Certificado de finalización confirmado por el emisor. Formación introductoria que complementa las prácticas académicas de CyberLab.
+
 - **Prompting responsable: maximiza la IA en tu negocio** — Santander Open Academy, curso finalizado el **27 de marzo de 2026** (8 horas, 2 módulos y autoevaluación). Contenido desarrollado por **Microsoft y Founderz**. Datos contrastados con el certificado PDF oficial aportado por el titular. El PDF y su número de serie se mantienen fuera del repositorio público por privacidad; pueden presentarse a solicitud.
 
 ## Funcionalidades

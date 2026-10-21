@@ -11,7 +11,7 @@ function closeMenu() { menuButton.setAttribute('aria-expanded', 'false'); $('#na
 $$('nav a').forEach(link => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') { closeMenu(); menuButton.focus(); } });
 const commands = {
-  perfil: ['Estudiante de Análisis de Sistemas', 'Estudiante de Ciencia de Datos', 'Desarrollo académico con Python', 'Aprendizaje práctico de ciberseguridad'],
+  perfil: ['Estudiante de Análisis de Sistemas', 'Estudiante de Ciencia de Datos', 'Desarrollo académico con Python', 'Introducción a Ciberseguridad — Cisco Networking Academy · Completado (oct. 2026)'],
   formacion: ['IFTS N.º 9 — Análisis de Sistemas · En curso', 'UTN — Ciencia de Datos y Análisis Avanzado · En curso', 'Universidad Distrital — Ingeniería Topográfica · 7 semestres cursados'],
   intereses: ['Análisis y arquitectura de sistemas', 'Machine Learning y modelado predictivo en formación', 'Ciberseguridad y redes', 'Cloud computing y calidad de software'],
   idiomas: ['Español: nativo', 'Inglés: avanzado', 'Nivel declarado; sin certificación publicada.']
@@ -24,7 +24,7 @@ $$('[data-command]').forEach(button => button.addEventListener('click', () => {
 const skills = {
   sistemas: {title:'Analizar antes de construir.', text:'Del problema a los requisitos y los modelos. Práctica académica vinculada al proyecto Frugi.', tags:['Análisis de requisitos','UML','Modelado de sistemas','Diseño de soluciones'], context:'EXPERIENCIA ACADÉMICA · Frugi / IFTS N.º 9'},
   datos: {title:'Aprender a hacer buenas preguntas.', text:'Práctica de Python, Jupyter, estadística, probabilidad, EDA e inferencia. Publiqué Titanic Analytics (ETL, EDA y ML educativo) y Casino Estadístico (simulación Monte Carlo, eventos raros y calibración). Continúo aprendiendo evaluación y validación de modelos.', tags:['Python','NumPy','SciPy','Pandas','Jupyter','Plotly','Streamlit','Estadística e inferencia','Monte Carlo','Machine Learning · en formación'], context:'PROYECTOS PUBLICADOS · Formación UTN en curso'},
-  seguridad: {title:'Entender la red desde dentro.', text:'Práctica en un laboratorio local con Windows y Ubuntu: conectividad, servicios y observación del tráfico.', tags:['Linux','VirtualBox','TCP/IP','SSH','Apache / HTTP','UFW','Wireshark'], context:'PRÁCTICA ACADÉMICA · CyberLab'},
+  seguridad: {title:'Entender la red desde dentro.', text:'Curso Introducción a Ciberseguridad completado en Cisco Networking Academy (octubre de 2026). Práctica en un laboratorio local con Windows y Ubuntu: conectividad, servicios y observación del tráfico.', tags:['Linux','VirtualBox','TCP/IP','SSH','Apache / HTTP','UFW','Wireshark'], context:'CURSO CISCO COMPLETADO · Práctica académica CyberLab'},
   desarrollo: {title:'Convertir una idea en software.', text:'Aplicación de Python, Flask y MySQL en un e-commerce académico. HTML, CSS y JavaScript en este portafolio.', tags:['Python','Flask','MySQL / SQL','HTML','CSS','JavaScript'], context:'APLICADO EN PROYECTOS · E-commerce / Portafolio'},
   herramientas: {title:'Un entorno para experimentar.', text:'Herramientas de apoyo para escribir código, organizar versiones, explorar datos y practicar con máquinas virtuales.', tags:['Git','GitHub','VS Code','Jupyter','VirtualBox'], context:'USO ACADÉMICO Y PERSONAL'}
 };
@@ -46,7 +46,7 @@ showProject('casino');
 const answers = {
   skills:'Camilo combina análisis de sistemas, Python y SQL con proyectos públicos de Ciencia de Datos. En Titanic Analytics aplica ETL y EDA; en Casino Estadístico usa NumPy, SciPy, Plotly y Streamlit para simulación Monte Carlo e inferencia. Cursa Ciencia de Datos en la UTN y continúa formándose en Machine Learning y validación de modelos.',
   projects:'Puedes explorar Casino Estadístico, un laboratorio Monte Carlo e inferencia con demo interactiva, y Titanic Survival Analytics, un dashboard de ETL, EDA y ML educativo. Ambos tienen código en GitHub. También desarrolló un e-commerce académico con Flask y MySQL y participa en Frugi App y CyberLab. Este sitio es su CV creativo.',
-  cyber:'Su experiencia es académica: máquinas virtuales Windows y Ubuntu, redes, SSH, HTTP, Apache, UFW y Wireshark. Está aprendiendo; no se presenta como especialista profesional en seguridad.',
+  cyber:'Completó Introducción a Ciberseguridad de Cisco Networking Academy en octubre de 2026. Su experiencia práctica es académica: máquinas virtuales Windows y Ubuntu, redes, SSH, HTTP, Apache, UFW y Wireshark. Está aprendiendo; no se presenta como especialista profesional en seguridad.',
   studies:'Cursa la Tecnicatura Superior en Análisis de Sistemas en IFTS N.º 9 y la formación en Ciencia de Datos y Análisis Avanzado de UTN. Ambas están en proceso. También cursó siete semestres de Ingeniería Topográfica.',
   interview:'Puede aportar curiosidad técnica, una mirada de sistemas y disposición a aprender. Sus proyectos permiten conversar sobre cómo analiza problemas, modela soluciones y lleva conceptos a la práctica. Busca sus primeras oportunidades tecnológicas.'
 };
