@@ -59,4 +59,9 @@ assert "showProject('casino')" in JS, "Casino debe aparecer seleccionado inicial
 assert "repeat(2,minmax(0,1fr))" in CSS, "Falta diseño adaptable del selector móvil"
 assert (ROOT / "css/styles.css").is_file()
 assert (ROOT / "js/app.js").is_file()
+badge_path = ROOT / "assets/certificates/insignia-entende-bitcoin-2025.webp"
+assert badge_path.is_file(), "Falta imagen de insignia Bitcoin"
+assert badge_path.read_bytes()[:4] == b"RIFF" and badge_path.read_bytes()[8:12] == b"WEBP", "Insignia Bitcoin corrupta o formato incorrecto"
+assert "Entendé Bitcoin: Primeros pasos en el mundo cripto" in HTML, "Falta microcredencial de Bitcoin"
+assert any(image.get("src") == "assets/certificates/insignia-entende-bitcoin-2025.webp" for image in parser.images), "No se muestra insignia real de Bitcoin"
 print("Validado: 5 proyectos, Casino destacado, enlaces, IDs, accesibilidad básica y CSS móvil.")

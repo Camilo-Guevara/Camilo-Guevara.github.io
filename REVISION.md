@@ -25,3 +25,10 @@ El sitio se publica desde la rama `main` mediante GitHub Pages una vez integrado
 
 ## Revisión histórica
 La revisión del 16 de octubre de 2026 cubría los primeros proyectos, sintaxis JS, DOM simulado y estructura HTML. Esta revisión actualiza el alcance para Casino Estadístico y sustituye las referencias históricas a publicación pendiente.
+
+## Actualización de credenciales — 23 de octubre de 2026
+- Incorporada la microcredencial digital «Entendé Bitcoin: primeros pasos en el mundo cripto», emitida por la Agencia de Habilidades para el Futuro el 3 de julio de 2025.
+- La imagen procede de la insignia aportada por el titular. Se convirtió a WebP para un recurso liviano (200 × 200 px), conservando la apariencia de la fuente.
+- Se identifica la ONG Bitcoin Argentina como responsable de contenidos y disertaciones, no como emisora de la microcredencial.
+- Se informa la vigencia original de un año (ya finalizada en julio de 2026); no se muestra un enlace privado de recepción como verificación pública.
+- La validación estática ahora comprueba la referencia HTML y existencia/firma WebP del recurso. Verificar el resultado de GitHub Actions para confirmar el despliegue.

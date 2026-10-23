@@ -14,6 +14,8 @@ Portafolio personal en español para presentar mi formación en **Análisis de S
 
 - **Prompting responsable: maximiza la IA en tu negocio** — Santander Open Academy, curso finalizado el **27 de marzo de 2026** (8 horas, 2 módulos y autoevaluación). Contenido desarrollado por **Microsoft y Founderz**. Datos contrastados con el certificado PDF oficial aportado por el titular. El PDF y su número de serie se mantienen fuera del repositorio público por privacidad; pueden presentarse a solicitud.
 
+- **Entendé Bitcoin: primeros pasos en el mundo cripto** — Agencia de Habilidades para el Futuro (Gobierno de la Ciudad de Buenos Aires). Microcredencial digital emitida el **3 de julio de 2025** por finalización de la jornada introductoria del Laboratorio de Finanzas del Centro de Simulación, con contenidos de la **ONG Bitcoin Argentina**. Aborda Bitcoin, blockchain, billeteras, ecosistema cripto, exchanges y prevención de estafas. **Vigencia original de un año, finalizada en julio de 2026**. Imagen real de la insignia aportada por el titular, optimizada para la web; no se publica el enlace privado de recepción de Open Badge Factory.
+
 ## Funcionalidades
 
 - Diseño responsivo con estética oscura y fotografía personal.
@@ -45,6 +47,7 @@ Las ilustraciones de los proyectos son conceptuales y no representan capturas ve
 | `css/styles.css` | Diseño y adaptación a pantallas |
 | `js/app.js` | Interacciones de la página |
 | `assets/images/camilo.jpeg` | Fotografía de perfil |
+| `assets/certificates/insignia-entende-bitcoin-2025.webp` | Insignia real de la microcredencial Bitcoin (imagen optimizada) |
 | `assets/favicon.svg` | Identidad visual |
 | `REVISION.md` | Alcance de la revisión y verificaciones pendientes |
 | `.github/workflows/cv-validation.yml` | Validación de JavaScript, navegación de proyectos, enlaces y estructura HTML |
