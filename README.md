@@ -10,6 +10,8 @@ Portafolio personal en español para presentar mi formación en **Análisis de S
 
 ## Certificaciones acreditadas
 
+- **AWS Educate · Introduction to Cloud 101** — Amazon Web Services, curso completado el **23 de octubre de 2026**. Correo oficial confirma la emisión del certificado digital de finalización. Contenidos: fundamentos de cloud computing, modelos de servicio, servicios esenciales de AWS, infraestructura global, seguridad y responsabilidad compartida, AWS Well-Architected. En el CV se muestra el diseño oficial de esta familia de insignias como **referencia visual**, no como un enlace personalizado. La URL individual de verificación de Credly aún no está disponible; no equivale a una certificación profesional AWS mediante examen.
+
 - **Introducción a Ciberseguridad** — Cisco Networking Academy, completado en **octubre de 2026**. Certificado de finalización confirmado por el emisor. Formación introductoria que complementa las prácticas académicas de CyberLab.
 
 - **Prompting responsable: maximiza la IA en tu negocio** — Santander Open Academy, curso finalizado el **27 de marzo de 2026** (8 horas, 2 módulos y autoevaluación). Contenido desarrollado por **Microsoft y Founderz**. Datos contrastados con el certificado PDF oficial aportado por el titular. El PDF y su número de serie se mantienen fuera del repositorio público por privacidad; pueden presentarse a solicitud.
