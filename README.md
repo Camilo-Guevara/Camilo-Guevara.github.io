@@ -4,6 +4,15 @@
 
 [Ver sitio web](https://camilo-guevara.github.io/) · [LinkedIn](https://www.linkedin.com/in/camilo-guevara-778a80385/) · [Perfil GitHub](https://github.com/Camilo-Guevara)
 
+## Currículums compatibles con lectura ATS
+
+El diseño visual de este sitio se mantiene como portafolio creativo. Para postulaciones existe una versión **de una columna, sin fotografías ni tablas**, con títulos convencionales y contenido profesional verificable, que puede imprimirse o guardarse como PDF desde el navegador.
+
+- [CV ATS - Analista de Datos / Python](https://camilo-guevara.github.io/cv-ats-datos.html)
+- [CV ATS - Analista de Sistemas / Desarrollo](https://camilo-guevara.github.io/cv-ats-sistemas.html)
+
+Estos documentos están adaptados a dos objetivos profesionales. La compatibilidad real y las palabras clave dependen de cada ATS y de cada oferta; no se garantiza una tasa de aprobación.
+
 ## Descripción
 
 Portafolio personal en español para presentar mi formación en **Análisis de Sistemas (IFTS N.º 9)** y **Ciencia de Datos y Análisis Avanzado (UTN)**, ambas en curso. Incluye demos públicas de **Casino Estadístico** (Monte Carlo e inferencia) y **Titanic Survival Analytics** (ETL, EDA y ML educativo). Los modelos predictivos avanzados siguen siendo parte de mi formación, no experiencia profesional acreditada.
