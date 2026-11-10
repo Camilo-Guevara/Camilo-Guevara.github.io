@@ -32,7 +32,7 @@ Portafolio personal en español para presentar mi formación en **Análisis de S
 - Diseño responsivo con estética oscura y fotografía personal.
 - Secciones de perfil, habilidades, proyectos, formación y contacto.
 - Terminal interactiva para consultar información del perfil.
-- Selector de competencias y **cinco proyectos** con Casino Estadístico destacado y enlaces a demo y repositorio.
+- Selector de competencias y **seis proyectos** con Casino Estadístico destacado y enlaces a demo y repositorio.
 - Asistente de consultas con respuestas predefinidas; **no utiliza IA generativa**.
 - Formulario que abre el cliente de correo mediante `mailto:`; **no envía mensajes automáticamente**.
 
@@ -41,6 +41,8 @@ Portafolio personal en español para presentar mi formación en **Análisis de S
 HTML5, CSS3, JavaScript y GitHub Pages. Este sitio no requiere backend ni servicios externos para sus funciones principales.
 
 ## Proyectos presentados
+
+- **[Pulso Vial · CABA](https://camilo-guevara.github.io/pulso-vial/)**: proyecto académico en curso de la diplomatura UTN. Análisis de 696 siniestros viales fatales y 717 víctimas (2016–2021).
 
 - **[Casino Estadístico — demo pública](https://casino-estadistico-ubpy8lsfkqbb8yh6teansn.streamlit.app/)** · [Código](https://github.com/Camilo-Guevara/Casino-Estadistico): simulación Monte Carlo con modelos Binomial, Poisson y Normal; tasas de eventos raros, Z-scores, intervalos de confianza, calibración y exportaciones CSV/JSON. Python, NumPy, SciPy, Plotly y Streamlit. Validación de la versión pública con navegador automatizado en desktop y móvil, para el flujo principal.
 - **[Titanic Survival Analytics — demo pública](https://portafolio-camilo-titanic.streamlit.app/)** · [Código](https://github.com/Camilo-Guevara/Titanic-Survival-Analytics): transformación ETL, análisis EDA y simulación educativa de regresión logística.
@@ -69,7 +71,7 @@ Clona o descarga el repositorio y abre `index.html` en un navegador. Mantén las
 
 ## Estado y validación
 
-El portafolio se publica desde `main` mediante GitHub Pages. La integración de Casino Estadístico incorpora controles de sintaxis y consistencia sobre cinco proyectos, enlaces y semántica HTML, verificados mediante GitHub Actions. No equivale a una auditoría visual completa ni Lighthouse; consulta `REVISION.md` para conocer el alcance exacto.
+El portafolio se publica desde `main` mediante GitHub Pages. La integración de Casino Estadístico incorpora controles de sintaxis y consistencia sobre seis proyectos, enlaces y semántica HTML, verificados mediante GitHub Actions. No equivale a una auditoría visual completa ni Lighthouse; consulta `REVISION.md` para conocer el alcance exacto.
 
 ## Contacto
 

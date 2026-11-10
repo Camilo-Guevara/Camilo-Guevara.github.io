@@ -12,7 +12,7 @@ def verify(page, mobile=False):
     page.on("pageerror", lambda error: errors.append(str(error)))
     page.goto(URL, wait_until="load")
     selectors = page.locator(".project-selector")
-    assert selectors.count() == 5, f"Se esperaban cinco proyectos; hay {selectors.count()}"
+    assert selectors.count() == 6, f"Se esperaban seis proyectos; hay {selectors.count()}"
     assert page.locator(".project-detail h3").inner_text() == "Casino Estadístico"
     assert page.locator(".project-selector[data-project='casino']").get_attribute("aria-pressed") == "true"
     assert page.locator(".project-body a[href='https://casino-estadistico-ubpy8lsfkqbb8yh6teansn.streamlit.app/']").count() == 1
@@ -40,7 +40,7 @@ def verify(page, mobile=False):
         page.screenshot(path=str(OUT / "cv-mobile-diagnostico.png"), full_page=True)
         assert width <= 400, f"Desbordamiento horizontal móvil: {width}px"
     page.screenshot(path=str(OUT / ("cv-mobile.png" if mobile else "cv-escritorio.png")), full_page=True)
-    print(f"OK: CV {'móvil' if mobile else 'escritorio'}, cinco proyectos, botones y enlaces.", flush=True)
+    print(f"OK: CV {'móvil' if mobile else 'escritorio'}, seis proyectos, botones y enlaces.", flush=True)
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True, args=["--no-sandbox"])

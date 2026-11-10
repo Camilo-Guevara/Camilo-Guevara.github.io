@@ -34,7 +34,7 @@ class SiteParser(HTMLParser):
 
 parser = SiteParser()
 parser.feed(HTML)
-expected = ["casino", "titanic", "frugi", "cyberlab", "ecommerce"]
+expected = ["casino", "titanic", "frugi", "cyberlab", "ecommerce", "pulso"]
 actual = [project.get("data-project") for project in parser.projects]
 assert actual == expected, f"Selector de proyectos inconsistente: {actual}"
 assert [p.get("data-project") for p in parser.projects if p.get("aria-pressed") == "true"] == ["casino"]
@@ -64,4 +64,4 @@ assert badge_path.is_file(), "Falta imagen de insignia Bitcoin"
 assert badge_path.read_bytes()[:4] == b"RIFF" and badge_path.read_bytes()[8:12] == b"WEBP", "Insignia Bitcoin corrupta o formato incorrecto"
 assert "Entendé Bitcoin: Primeros pasos en el mundo cripto" in HTML, "Falta microcredencial de Bitcoin"
 assert any(image.get("src") == "assets/certificates/insignia-entende-bitcoin-2025.webp" for image in parser.images), "No se muestra insignia real de Bitcoin"
-print("Validado: 5 proyectos, Casino destacado, enlaces, IDs, accesibilidad básica y CSS móvil.")
+print("Validado: 6 proyectos, Casino destacado, enlaces, IDs, accesibilidad básica y CSS móvil.")
