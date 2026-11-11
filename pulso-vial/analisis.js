@@ -78,7 +78,7 @@ const PulsoAnalysis = (() => {
     const gs = groups(rows);
     const documented = rows.filter(r=>classify(r).status==='documentado').length;
     const heuristic = rows.filter(r=>classify(r).status==='heurístico').length;
-    el('cross-summary').textContent = documented+' cruces documentados en Calle/Cruce ('+pct(documented,rows.length)+' de '+rows.length+' hechos); '+heuristic+' con indicios textuales adicionales; '+(rows.length-documented-heuristic)+' sin confirmar. Documentado no implica cruce a nivel ni validación de campo.';
+    el('cross-summary').textContent = documented+' hechos en cruces documentados en Calle/Cruce ('+pct(documented,rows.length)+' de '+rows.length+' hechos); '+heuristic+' con indicios textuales adicionales; '+(rows.length-documented-heuristic)+' sin confirmar. Documentado no implica cruce a nivel ni validación de campo.';
     el('critical-ranking').innerHTML = gs.map((g,i)=>'<tr><td><button data-critical="'+i+'">'+safe(g.key)+'</button></td><td>'+safe(g.status)+'</td><td>'+g.rows.length+'</td><td>'+g.rows.reduce((n,r)=>n+r.n,0)+'</td></tr>').join('') || '<tr><td colspan="4">Sin cruces para esta selección.</td></tr>';
     el('critical-ranking').querySelectorAll('button').forEach(b=>b.onclick=()=>select(gs[+b.dataset.critical]));
     const base = document.getElementById('map').innerHTML.replace(/<circle[\s\S]*$/,'');
